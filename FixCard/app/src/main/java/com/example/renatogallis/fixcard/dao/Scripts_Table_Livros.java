@@ -6,13 +6,8 @@ import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v4.database.DatabaseUtilsCompat;
-import android.util.Log;
-import android.widget.Toast;
-
 import com.example.renatogallis.fixcard.Model.Livro;
 import com.example.renatogallis.fixcard.Utills.Utilitarios;
-
 import java.util.LinkedList;
 import java.util.List;
 

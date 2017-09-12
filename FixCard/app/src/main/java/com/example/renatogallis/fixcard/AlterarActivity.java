@@ -90,8 +90,7 @@ public class AlterarActivity extends AppCompatActivity {
 
             sendIntent.setAction(Intent.ACTION_SEND);
             sendIntent.setType("*/*");
-            File f = new File(Environment.getExternalStorageDirectory() + File.separator + "temporary_file.jpg");
-            Log.d("Arquivo f:", "" + f);
+            File f = new File(Environment.getExternalStorageDirectory() + File.separator + titulo_atual.getText().toString()+".jpg");
             try {
                 int permission = ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 
@@ -112,7 +111,7 @@ public class AlterarActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
 
-            sendIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("file:///sdcard/temporary_file.jpg"));
+            sendIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("file:///sdcard/"+titulo_atual.getText().toString()+".jpg"));
 
             startActivity(sendIntent);
         }

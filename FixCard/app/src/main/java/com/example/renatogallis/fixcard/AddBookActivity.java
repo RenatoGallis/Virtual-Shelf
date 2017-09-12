@@ -1,13 +1,11 @@
 package com.example.renatogallis.fixcard;
 
 import android.content.Intent;
-import android.database.DatabaseUtils;
 import android.graphics.Bitmap;
 import android.provider.MediaStore;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -36,13 +34,11 @@ public class AddBookActivity extends AppCompatActivity {
 
         image = (ImageView) findViewById(R.id.imagem_hq);
         titulo = (EditText) findViewById(R.id.titulo);
-        //selo = (Text) findViewById(R.id.editora);
         autor = (EditText) findViewById(R.id.autor);
-        //Log.d("COUNT DA TABLE", String.valueOf(DatabaseUtils.queryNumEntries(books.returnConection(), books.TABLE_LIVRO)));
         texto_tire_a_foto = (TextView) findViewById(R.id.tv_tireAFoto);
 
     }
-
+// botão para ativar a camera:
     public void foto(View v) {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (intent.resolveActivity(getPackageManager()) != null)
@@ -65,12 +61,12 @@ public class AddBookActivity extends AppCompatActivity {
         }
 
     }
-
+// Botão de voltar do celular:
     public void onBackPressed() {
         super.onBackPressed();
     }
 
-
+//Salvando o livro no banco:
     public void Salvar(View view) {
       int verificacao =   books.verificaDuplicidadeCadastro(titulo.getText().toString());
 
@@ -86,8 +82,6 @@ public class AddBookActivity extends AppCompatActivity {
             books.adicionar_livro(livro, img);
 
 
-//colocar tratamento de salvar somente uma vez com o mesmo nome.
-
             Snackbar.make(view, R.string.Menssagem_Sucesso_Add_Livro, Snackbar.LENGTH_LONG).show();
             image.setImageBitmap(null);
             titulo.setText("");
@@ -95,7 +89,7 @@ public class AddBookActivity extends AppCompatActivity {
             texto_tire_a_foto.setText(R.string.tv_tire_AFoto);
         }
     }
-
+//Metodo para preservar o estado dos campos na instancia atual para possibilitar virar a tela na mesma instancia
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState) {
         savedInstanceState.putByteArray("FOTO_AICIONAR", img);
@@ -104,7 +98,7 @@ public class AddBookActivity extends AppCompatActivity {
 
         super.onSaveInstanceState(savedInstanceState);
     }
-
+// Complemento do metodo acima para restaurar os valores dos campos da instancia atual
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);

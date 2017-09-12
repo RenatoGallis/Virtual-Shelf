@@ -19,7 +19,7 @@ import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
-import com.facebook.stetho.Stetho;
+
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
         chkConectado = (CheckBox) findViewById(R.id.ckConectado);
         usuario = consult.getUsuario_Cadastrado_App();
 
-
+//Metodos para controle da chamada do Facebook:
         facebook.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {

@@ -33,7 +33,7 @@ public class FullScreanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_full_screan);
         start_stetho();
 
-
+//Verifica quantas linhas tem na tabela de usuarios para nao passar mais pelo WS disponibilizado
         if(DataBase_Usuarios.getExistDadosTabela(dao.returnConection(),dao.TABLE_USUARIOS) ==true) {
             carregaDados();
         }
@@ -91,18 +91,13 @@ public class FullScreanActivity extends AppCompatActivity {
 
         dao.adicionar_usuario(usuario);
     }
-
+// Faz a configuração do Stetho
     private void start_stetho() {
         Context context = getBaseContext();
-        // Create an InitializerBuilder
         Stetho.InitializerBuilder initializerBuilder = Stetho.newInitializerBuilder(this);
-        // Enable Chrome DevTools
         initializerBuilder.enableWebKitInspector(Stetho.defaultInspectorModulesProvider(this));
-        // Enable command line interface
         initializerBuilder.enableDumpapp(Stetho.defaultDumperPluginsProvider(context));
-        // Use the InitializerBuilder to generate an Initializer
         Stetho.Initializer initializer = initializerBuilder.build();
-        // Initialize Stetho with the Initializer
         Stetho.initialize(initializer);
     }
 

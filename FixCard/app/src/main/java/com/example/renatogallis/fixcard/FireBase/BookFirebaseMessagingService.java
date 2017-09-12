@@ -44,7 +44,7 @@ public class BookFirebaseMessagingService extends FirebaseMessagingService {
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
                 .setContentTitle(titulo)
-                .setSmallIcon(R.drawable.arvorepretaebranca)
+                .setSmallIcon(R.drawable.arvore_livros)
                 .setContentText(mensagem)
                 .setAutoCancel(true)
                 .setSound(defaultSoundUri)

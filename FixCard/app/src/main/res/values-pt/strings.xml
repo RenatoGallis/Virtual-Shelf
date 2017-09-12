@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Botao_Cancel_Alert_Dialog">Cancelar</string>
+    <string name="Menssagem_Alert_Deletar">Você deseja excluir o livro</string>
+    <string name="Menssagem_Erro_Add_Livro">Preencha os campos corretamente</string>
+    <string name="Menssagem_Sucesso_Add_Livro">Livro registrado com sucesso</string>
+    <string name="OK_Botao_Alert_Dialog">OK</string>
+    <string name="Toast_Error_Login">Usuario ou senha invalidos</string>
+    <string name="add_books">Adicionar Livros</string>
+    <string name="bookstore_map">Mapa da livrarias</string>
+    <string name="button_add_book">Salvar</string>
+    <string name="button_login_avançar">Entrar</string>
+    <string name="contact">Contate-nos:</string>
+    <string name="continuar_conectado">Mantenha conectado</string>
+    <string name="desenvolvido_por">Desevolvido por Renato Gallis</string>
+    <string name="hint_button_alterar">Alterar</string>
+    <string name="hint_edt_add_book">Titulo</string>
+    <string name="hint_edt_add_book_author">Autor</string>
+    <string name="hint_edt_alterar">Titulo</string>
+    <string name="hint_edt_alterar_author">Autor</string>
+    <string name="hint_tela_login_nome">Usuario</string>
+    <string name="hint_tela_login_senha">Senha</string>
+    <string name="list_books">Listar livros</string>
+    <string name="logoff">Sair</string>
+    <string name="marcador_posicao_inicial_map">Sua localização</string>
+    <string name="sobre">Sobre</string>
+    <string name="acount">Conta</string>
+    <string name="action_settings">Config</string>
+    <string name="tv_tire_AFoto">Foto da capa do livro</string>
+    <string name="versao_app">Verão 1.0</string>
+    <string name="title_activity_maps_livraria">Mapa</string>
+    <string name="Alterar_books">Alterar livros</string>
+    <string name="Titulo_Ja_Cadastrado">Titulo já cadastrado</string>
+</resources>

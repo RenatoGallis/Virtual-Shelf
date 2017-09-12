@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name" translatable="false">Virtual shelf</string>
+    <string name="titulo_tela_login" translatable="false">Virtual shelf</string>
+    <string name="desenvolvido_por">Developer by: Renato Gallis</string>
+    <string name="hint_tela_login_nome">User</string>
+    <string name="hint_tela_login_senha">Password</string>
+    <string name="button_login_avançar">Log In</string>
+    <string name="continuar_conectado">Keep Conected</string>
+    <string name="title_activity_principal" translatable="false">Virtual shelf</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!--  facebook nao internacionalizar-->
+    <string name="facebook_app_id" translatable="false">751349981719302</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb751349981719302</string>
+    <!--  facebook nao internacionalizar-->
+
+
+    <string name="sobre">About</string>
+    <string name="add_books">Add Books</string>
+    <string name="list_books">List Books</string>
+    <string name="bookstore_map">Bookstores map</string>
+    <string name="acount">Acount</string>
+    <string name="logoff">Log Out</string>
+    <string name="bookeria" translatable="false">Virtual shelf</string>
+    <string name="title_activity_maps_livraria">Map</string>
+    <string name="marcador_posicao_inicial_map">Your location</string>
+    <string name="Toast_Error_Login">Username or password is invalid</string>
+    <string name="Menssagem_Erro_Add_Livro">Please fill in the fields correctly</string>
+    <string name="Menssagem_Sucesso_Add_Livro">Book successfully registered</string>
+    <string name="Menssagem_Alert_Deletar">Do you want to delete the book</string>
+    <string name="Botao_Cancel_Alert_Dialog">Cancel</string>
+    <string name="OK_Botao_Alert_Dialog">OK</string>
+    <string name="tv_tire_AFoto">Book cover photo</string>
+    <string name="versao_app">Version: 1.0</string>
+    <string name="hint_edt_add_book">Title</string>
+    <string name="hint_edt_add_book_author">Author</string>
+    <string name="button_add_book">Save</string>
+    <string name="hint_edt_alterar">Title</string>
+    <string name="hint_edt_alterar_author">Author</string>
+    <string name="hint_button_alterar">Alter</string>
+    <string name="textv_nav_header_principal" translatable="false">Virtual shelf</string>
+    <string name="contact">Contact Us:</string>
+    <string name="Alterar_books">Alter Books</string>
+    <string name="Titulo_Ja_Cadastrado">Title already registered</string>
+
+
+</resources>

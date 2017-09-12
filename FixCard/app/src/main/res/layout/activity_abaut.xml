@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorw"
+    tools:context="com.example.renatogallis.fixcard.Abaut"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="@dimen/arvore_livros_abaut"
+        android:layout_height="@dimen/height_arvore_livros_abaut"
+        android:layout_gravity="center"
+        android:src="@drawable/arvore_livros"
+        android:layout_weight="0.23" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/desenvolvido_por"
+        android:textSize="@dimen/tamanho_desenvolvido_por"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/versao_app"
+        android:textSize="@dimen/tamanho_desenvolvido_por"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact"
+            android:layout_gravity="center"
+            android:textSize="@dimen/tamanho_desenvolvido_por"
+            android:textStyle="italic"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/image_view_contact_padding_left"
+            android:onClick="ligar"
+            android:id="@+id/botao_ligar"
+            android:background="@null"
+            android:src="@drawable/call"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

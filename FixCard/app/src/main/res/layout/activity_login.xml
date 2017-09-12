@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/padding_bottom_login"
+    android:paddingLeft="@dimen/padding_left_login"
+    android:paddingRight="@dimen/padding_right_login"
+    android:paddingTop="@dimen/padding_top_login"
+    tools:context="com.example.renatogallis.fixcard.LoginActivity">
+
+    <TextView
+        android:id="@+id/tvCabecalho"
+        style="@style/tvCabecalho"
+        android:layout_marginTop="@dimen/cabecalho_dist"
+        android:text="@string/bookeria"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignTop="@+id/tvCabecalho">
+
+
+        <EditText
+            android:layout_marginTop="@dimen/margem_user"
+            android:id="@+id/tilNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_tela_login_nome" />
+
+
+        <EditText
+            android:id="@+id/tilSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_tela_login_senha"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/ckConectado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/chk_conectado"
+            android:text="@string/continuar_conectado" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="login"
+            android:text="@string/button_login_avançar" />
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/btn_login_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvRodape"
+        style="@style/label_desenvolvido_por"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

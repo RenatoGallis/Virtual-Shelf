@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.renatogallis.fixcard">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/arvore_livros"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/arvore_livros"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true">
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".FullScreanActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity"
+            android:label="Login"/>
+
+        <activity
+            android:name=".PrincipalActivit"
+            android:label="@string/title_activity_principal"
+            android:finishOnCloseSystemDialogs="true"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".AddBookActivity"
+            android:label="@string/add_books"/>
+
+        <activity android:name=".ListActivity"
+            android:label="@string/list_books"/>
+
+        <activity android:name=".AlterarActivity"
+            android:label="@string/Alterar_books"/>
+
+        <activity
+            android:name=".Maps.MapsLivrariaActivity"
+            android:label="@string/title_activity_maps_livraria" />
+
+        <activity android:name=".Abaut"
+            android:label="@string/sobre">
+        </activity>
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="9c8be280b1956dc567e0eb942eb345e3dfab744e"/>
+
+        <service android:name=".FireBase.BookFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".FireBase.BookFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

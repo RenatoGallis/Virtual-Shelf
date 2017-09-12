@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/padding_botton_alterar"
+    android:paddingLeft="@dimen/padding_left_alterar"
+    android:paddingRight="@dimen/padding_right_alterar"
+    android:paddingTop="@dimen/padding_top_alterar"
+    tools:context="com.example.renatogallis.fixcard.AddBookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imagem_hq_alterar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ImageView_he"
+            android:layout_marginTop="@dimen/layout_image_dimen"
+            android:background="@null"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_foto_alterar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/ImageButton"
+                android:background="@null"
+                android:onClick="foto_alterar"
+                android:src="@drawable/camera" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/titulo_alterar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:hint="@string/hint_edt_alterar"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/autor_alterar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_edt_alterar_author"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/Alterar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:onClick="Alterar"
+            android:text="@string/hint_button_alterar" />
+
+    </LinearLayout>
+</RelativeLayout>

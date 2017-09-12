@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "185458424911",
+    "firebase_url": "https://fixcard-3802a.firebaseio.com",
+    "project_id": "fixcard-3802a",
+    "storage_bucket": "fixcard-3802a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185458424911:android:89fb15b929398ddb",
+        "android_client_info": {
+          "package_name": "com.example.renatogallis.fixcard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185458424911-s88rk3a5kuenk06dvagj4qdk62nvmuqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPqmL0XJLDP9oRkQWMmtREdOV7yerGk8M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

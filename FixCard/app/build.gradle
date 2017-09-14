@@ -4,7 +4,8 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+   // buildToolsVersion "25.0.3"
+   buildToolsVersion "25.0.2" // Alterei o de cima para que conseguisse a instalação do .apk
     defaultConfig {
         applicationId "com.example.renatogallis.fixcard"
         minSdkVersion 15

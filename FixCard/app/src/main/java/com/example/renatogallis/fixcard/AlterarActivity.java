@@ -142,8 +142,6 @@ public class AlterarActivity extends AppCompatActivity {
 
         if (titulo_atual.getText().toString().equals("") || autor_atual.getText().toString().equals("")) {
             Snackbar.make(view, R.string.Menssagem_Erro_Add_Livro, Snackbar.LENGTH_LONG).show();
-        }else if (verificacao>=1) {
-            Snackbar.make(view, R.string.Titulo_Ja_Cadastrado, Snackbar.LENGTH_LONG).show();
         }else {
             Livro livro = new Livro();
             livro.setTitulo(titulo_atual.getText().toString());

@@ -64,6 +64,8 @@ public class AddBookActivity extends AppCompatActivity {
 // Botão de voltar do celular:
     public void onBackPressed() {
         super.onBackPressed();
+        Intent intent = new Intent(getApplicationContext(), PrincipalActivit.class);
+        startActivity(intent);
     }
 
 //Salvando o livro no banco:

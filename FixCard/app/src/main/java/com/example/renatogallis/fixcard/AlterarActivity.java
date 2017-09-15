@@ -86,22 +86,24 @@ public class AlterarActivity extends AppCompatActivity {
 
         if (id == R.id.menu_item_share) {
 
+            int permission = ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+            if (permission != PackageManager.PERMISSION_GRANTED) {
+                // We don't have permission so prompt the user
+                ActivityCompat.requestPermissions(
+                        this,
+                        PERMISSIONS_STORAGE,
+                        REQUEST_EXTERNAL_STORAGE
+                );
+            }
+
+
             Intent sendIntent = new Intent();
 
             sendIntent.setAction(Intent.ACTION_SEND);
             sendIntent.setType("*/*");
             File f = new File(Environment.getExternalStorageDirectory() + File.separator + titulo_atual.getText().toString()+".jpg");
             try {
-                int permission = ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
-
-                if (permission != PackageManager.PERMISSION_GRANTED) {
-                    // We don't have permission so prompt the user
-                    ActivityCompat.requestPermissions(
-                            this,
-                            PERMISSIONS_STORAGE,
-                            REQUEST_EXTERNAL_STORAGE
-                    );
-                }
 
                 f.createNewFile();
                 FileOutputStream fo = new FileOutputStream(f);
